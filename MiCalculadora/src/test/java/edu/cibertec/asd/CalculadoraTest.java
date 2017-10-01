@@ -14,6 +14,7 @@ public class CalculadoraTest {
 		Calculadora calc = new Calculadora();
 		int resultado = calc.sumar(1, 4);
 		assertEquals(5, resultado);
+		
 	}
 
 	@Test
@@ -27,6 +28,13 @@ public class CalculadoraTest {
 	public void Sumar5ymenos1_resulta4() {
 		Calculadora calc = new Calculadora();
 		int resultado = calc.sumar(5, -1);
+		assertEquals(4, resultado);
+	}
+	
+	@Test
+	public void Sumar6ymenos2_resulta4() {
+		Calculadora calc = new Calculadora();
+		int resultado = calc.sumar(6, -2);
 		assertEquals(4, resultado);
 	}
 
